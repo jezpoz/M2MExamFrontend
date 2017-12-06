@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="30">
+  <title>M2M Exam Client Dashboard</title>
+  <meta name="description" content="M2M Dashboard">
+  <meta name="author" content="Jesper Martinsen Førisdahl">
+  <!-- Webpage made with the Skeleton Boilerplate -->
+  <!--  Check it out on http://getskeleton.com/ ! -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+
+  <div class="container">
+    <h4 id="title" style="margin-top:5%"></h4>
+    <p>Charts for the selected room. To point it out, the movement chart is funky. <br>
+      It's 1 when the sensor has detected movement in the room, and 0 when it hasn't dectected movement.</p>
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+        <div class="graph">
+          <canvas id="tempGraph" height="400" width="400"></canvas>
+        </div>
+        <div class="graph">
+          <canvas id="humidityGraph" height="400" width="400"></canvas>
+        </div>
+        <div class="graph">
+          <canvas id="movementGraph" height="400" width="400"></canvas>
+        </div>
+      </div>
+      <div class="one-half column" style="margin-top: 10%">
+        <div class="graph">
+          <canvas id="photovalGraph" height="400" width="400"></canvas>
+        </div>
+        <div class="graph">
+          <canvas id="ppmGraph" height="400" width="400"></canvas>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+  <script src="js/graphs.js"></script>
+
+</body>
+</html>
